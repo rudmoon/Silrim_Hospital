@@ -19,46 +19,53 @@ ul,li {
     --white : #ffffff;
 
     /* Font-size */
+    --font4 : 4px;
     --font7 : 7px;
     --font10 : 10px;
     --font13 : 13px;
     --font15 : 15px;
     --font16 : 16px;
     --font18 : 18px;
+    --font20 : 20px;
     --font25 : 25px;
     --font26 : 26px;
     --font32 : 32px;
 }
 
+/* Nav-Part */
 #nav {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: var(--font20);
 }
 .nav-up {
-    width: 90%;
+    width: 85%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding-top: var(--font25);
 }
 .nav-up__navbuttons button {
-    color : var(--white);
     font-size: var(--font15);
     font-weight: 600;
-    padding : var(--font10);
-    
+    padding : var(--font10);  
     border-radius: var(--font13);
 }
 .nav-up__navbuttons button:nth-child(1) {
+    color : var(--white);
     background-color: var(--dark-blue);
     border : none;
 }
-.nav-up__navbuttons button:nth-child(2) {
+.nav-up__navbuttons:nth-child(2) button {
     background-color: var(--white);
     color : var(--black);
-    border-color: var(--black) 1px;
+    border-right-color: var(--black);
+    box-shadow: none;
+}
+.nav-up__navbuttons button:nth-child(2) span {
+    font-weight: 400;
 }
 .nav-up__navbuttons button:nth-child(1):hover span {
     text-decoration: underline;
@@ -68,8 +75,6 @@ ul,li {
     text-decoration: underline;
     text-decoration-color: var(--black);
 }
-
-
 .nav-down {
     width: 70%;
 }
@@ -85,4 +90,50 @@ ul,li {
 }
 .nav-up__etcs {
     display: flex;
+}
+.etc__contact {
+    margin-right: var(--font32);
+}
+.etc__contact i {
+    color : var(--dark-blue);
+}
+.etc__contact span {
+    margin: 0 var(--font10) 0 var(--font10); 
+    font-size: var(--font16);
+}
+.etc__contact b {
+    color : var(--dark-blue);
+    font-size: var(--font20);
+    font-weight: 600;
+}
+.etc__signs {
+    margin-left: var(--font10);
+}
+.etc__signs a {
+    color : var(--gray);
+    margin : 0 var(--font4);
+    font-size: var(--font13);
+}
+
+/* Header-Part */
+#header {
+    width: 100%;
+    height: 710px;
+    position: relative;
+}
+.header__slider {
+    position: absolute;
+    width: 100%;
+    padding: 0;
+    margin : 0;
+}
+.slide {
+    width: 100%;
+}
+.slide img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    
 }
