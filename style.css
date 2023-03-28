@@ -118,22 +118,125 @@ ul,li {
 /* Header-Part */
 #header {
     width: 100%;
-    height: 710px;
+    height: 720px;
     position: relative;
+    overflow-x: hidden;
+    margin-bottom: 5%;
 }
 .header__slider {
     position: absolute;
+    height: 720px;
     width: 100%;
     padding: 0;
     margin : 0;
+
+}
+.header__slider.active {
+    transition: all 0.3s ease-in-out;
 }
 .slide {
     width: 100%;
+    height: 720px;
+    position: absolute;
 }
-.slide img {
-    max-width: 100%;
+
+.slide:nth-child(1) {
     width: 100%;
-    height: auto;
-    object-fit: contain;
-    
+    background: url(./image/slide1.jpg) no-repeat center;
+    background-size: 100% 130%;
+    height: 720px;
 }
+.slide:nth-child(2) {
+    width: 100%;
+    background: url(./image/slide2.jpg) no-repeat center;
+    background-size: 100% 130%;
+    height: 720px;
+}
+.slide:nth-child(3) {
+    width: 100%;
+    background: url(./image/slide3.jpg) no-repeat center;
+    background-size: 100% 130%;
+    height: 720px;
+}
+.slide:nth-child(4) {
+    width: 100%;
+    background: url(./image/slide4.jpg) no-repeat center;
+    background-size: 100% 130%;
+    height: 720px;
+}
+.slide:nth-child(5) {
+    width: 100%;
+    background: url(./image/slide5.jpg) no-repeat center;
+    background-size: 100% 130%;
+    height: 720px;
+}
+.header__squares {
+    position: absolute;
+    display: flex;
+    left : 50%;
+    transform: translateX(-50%);
+    bottom: 30px;
+}
+.square {
+    width: 15px;
+    height: 15px;
+    background-color: var(--white);
+    margin: 0 10px;
+    border-radius: 50%;
+}
+.square.animated {
+    background-color: var(--black);
+}
+#content {
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;
+    padding : 0;
+    display: flex;
+    justify-content: center;
+}
+.content__fadeIn {
+    position: relative;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    padding : 0;
+    opacity: 1;
+}
+
+.fadeInBtn{
+    position: absolute;
+    top : 120px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fadeInBtn img {
+    width: 100%;
+}
+
+.fadeInBtn:nth-child(1) {
+    left : 0;
+}
+.fadeInBtn:nth-child(1).active {
+    top : 0;
+    transition: all 1s;
+}
+.fadeInBtn:nth-child(2) {
+    left : 50%;
+    transform: translateX(-50%);
+}
+.fadeInBtn:nth-child(2).active {
+    top : 0;
+    transition: all 1.4s;
+}
+.fadeInBtn:nth-child(3) {
+    right: 0;
+}
+.fadeInBtn:nth-child(3).active {
+    top : 0;
+    transition: all 1.8s;
+}
+
