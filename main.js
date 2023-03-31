@@ -60,7 +60,7 @@ function scrollFadeOut() {
 
 var mapContainer = document.getElementById("map"), // 지도를 표시할 div
   mapOption = {
-    center: new kakao.maps.LatLng(37.56686, 126.97828), // 지도의 중심좌표
+    center: new kakao.maps.LatLng(37.492650022989395, 127.04323840512544), // 지도의 중심좌표
     level: 3, // 지도의 확대 레벨
     mapTypeId: kakao.maps.MapTypeId.ROADMAP, // 지도종류
   };
