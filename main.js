@@ -60,7 +60,7 @@ function scrollFadeOut() {
 
 var mapContainer = document.getElementById("map"), // 지도를 표시할 div
   mapOption = {
-    center: new kakao.maps.LatLng(37.492650022989395, 127.04323840512544), // 지도의 중심좌표
+    center: new kakao.maps.LatLng(37.49285318116372, 127.04204271354173), // 지도의 중심좌표
     level: 3, // 지도의 확대 레벨
     mapTypeId: kakao.maps.MapTypeId.ROADMAP, // 지도종류
   };
@@ -70,9 +70,11 @@ var map = new kakao.maps.Map(mapContainer, mapOption);
 
 // 지도에 마커를 생성하고 표시한다
 var marker = new kakao.maps.Marker({
-  position: new kakao.maps.LatLng(37.56682, 126.97865), // 마커의 좌표
+  position: new kakao.maps.LatLng(37.49285318116372, 127.04204271354173), // 마커의 좌표
   map: map, // 마커를 표시할 지도 객체
 });
+
+marker.setMap(map);
 
 function init() {
     scrollFadeOut();
