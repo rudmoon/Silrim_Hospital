@@ -17,6 +17,13 @@ ul,li {
     --black : #333333;
     --pink : #d59999;
     --white : #ffffff;
+    --sky-blue : #0092E5;
+    --brown : #c39973;
+    --yellow : #ffe900;
+    --green : #50b947;
+    --blue : #5b8cd3;
+    --sns : #2d3753;
+
 
     /* Font-size */
     --font4 : 4px;
@@ -197,7 +204,7 @@ ul,li {
 }
 .content__fadeIn {
     position: relative;
-    width: 70%;
+    width: 80%;
     display: flex;
     justify-content: space-between;
     padding : 0;
@@ -246,10 +253,128 @@ ul,li {
     justify-content: center;
 }
 .nonContent__container {
-    width: 70%;
+    width: 80%;
     display: flex;
+    justify-content: space-between;
 }
 
 #map,.second__nonContent,.third__nonContent {
     width: 30%;
+    height: 400px;
+}
+
+.second__nonContent {
+    display: flex;
+    flex-direction: column;
+    padding : 5px;
+}
+.second__nonContent li:nth-child(1) {
+    color: var(--black);
+    font-size: var(--font25);
+    font-weight: 600;
+}
+.second__nonContent li:nth-child(2) {
+    color: var(--dark-blue);
+    font-size: var(--font32);
+    font-weight: 600;
+    margin-bottom: var(--font20);
+}
+.second__nonContent li:nth-child(3),.second__nonContent li:nth-child(4),.second__nonContent li:nth-child(5),.second__nonContent li:nth-child(6) {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+}
+.second__nonContent li:nth-child(3) p,.second__nonContent li:nth-child(4) p,.second__nonContent li:nth-child(5) p,.second__nonContent li:nth-child(6) p {
+    margin: 0;
+    font-size: var(--font16);
+    color : var(--sky-blue);
+    font-weight: 500;
+}
+.second__nonContent li:nth-child(3) span,.second__nonContent li:nth-child(4) span,.second__nonContent li:nth-child(5) span,.second__nonContent li:nth-child(6) span {
+    color: var(--black);
+    font-weight: 300;
+    font-size: var(--font16);
+}
+.second__nonContent li:nth-child(7) {
+    width: 70%;
+    display: flex;
+    justify-content: end;
+    color : var(--sky-blue);
+}
+.second__nonContent li:nth-child(7) p {
+    margin : var(--font10) 0 var(--font15);
+}
+.second__nonContent li:nth-child(8),.second__nonContent li:nth-child(9) {
+    font-size: var(--font15);
+    color : var(--brown);
+}
+.second__nonContent li i {
+    font-size: var(--font20);
+}
+
+.third__nonContent {
+    display: flex;
+    flex-direction: column;
+    padding : 0;
+}
+.third__nonContent li:nth-child(1) {
+    font-size: var(--font25);
+    color : var(--sns);
+    font-weight: 600;
+    margin-bottom: var(--font10);
+}
+.third__nonContent li:not(:nth-child(1)) {
+    margin-bottom: var(--font10);
+    padding: 5px 20px 5px 20px;
+    height: 70px;
+}
+.third__nonContent li a {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.third__nonContent li span, .third__nonContent li i {
+    font-size: var(--font20);
+}
+.third__nonContent li i:not(:nth-child(1)) {
+    color : var(--black);
+}
+.third__nonContent li:nth-child(2) {
+    background-color: var(--yellow);
+}
+.third__nonContent li:nth-child(2) span {
+    color : var(--black);
+    font-weight: 500;
+}
+.third__nonContent li:nth-child(3) {
+    background-color: var(--green);
+}
+.third__nonContent li:nth-child(3) span {
+    color : var(--white);
+    font-weight: 500;
+}
+.third__nonContent li:nth-child(4) {
+    background-color: var(--blue)
+}
+.third__nonContent li:nth-child(4) span {
+    color : var(--white);
+    font-weight: 500;
+}
+
+.third__nonContent li:nth-child(5) {
+    background-color: -webkit-radial-gradient(32% 106%, circle cover, rgb(255, 225, 125) 0%, rgb(255, 205, 105) 10%, rgb(250, 145, 55) 28%, rgb(235, 65, 65) 42%, transparent 82%), -webkit-linear-gradient(-45deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
+
+background: -moz-radial-gradient(32% 106%, circle cover, rgb(255, 225, 125) 0%, rgb(255, 205, 105) 10%, rgb(250, 145, 55) 28%, rgb(235, 65, 65) 42%, transparent 82%), -moz-linear-gradient(-45deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
+
+background: -ms-radial-gradient(32% 106%, circle cover, rgb(255, 225, 125) 0%, rgb(255, 205, 105) 10%, rgb(250, 145, 55) 28%, rgb(235, 65, 65) 42%, transparent 82%), -ms-linear-gradient(-45deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
+
+background: -o-radial-gradient(32% 106%, circle cover, rgb(255, 225, 125) 0%, rgb(255, 205, 105) 10%, rgb(250, 145, 55) 28%, rgb(235, 65, 65) 42%, transparent 82%), -o-linear-gradient(-45deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
+
+background: radial-gradient(circle farthest-corner at 32% 106%, rgb(255, 225, 125) 0%, rgb(255, 205, 105) 10%, rgb(250, 145, 55) 28%, rgb(235, 65, 65) 42%, transparent 82%), linear-gradient(135deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
+}
+.third__nonContent li:nth-child(5) span {
+    color : var(--white);
+    font-weight: 500;
 }
