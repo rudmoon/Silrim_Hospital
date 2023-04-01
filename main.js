@@ -126,6 +126,7 @@ Arrow_totheTop.addEventListener('click',() => {
 function init() {
     scrollFadeOut();
     scrollFadein();
+    makingMap();
 }
 
 init();
